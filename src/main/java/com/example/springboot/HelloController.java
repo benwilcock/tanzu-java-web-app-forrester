@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class HelloController {
 
+	private String name = "Forrester";
+
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot + Tanzu!";
+		return "Greetings from "+name+", Spring Boot + Tanzu!";
 	}
 
 }
